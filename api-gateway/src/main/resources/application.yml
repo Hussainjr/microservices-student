@@ -26,7 +26,19 @@ spring:
         - id: eureka-service
           uri: lb://eureka-service
           predicates:
+            - Path=/api/services/**
+          filters:
+            - StripPrefix=0
+        - id: eureka-dashboard
+          uri: lb://eureka-service
+          predicates:
             - Path=/eureka/**
+          filters:
+            - StripPrefix=0
+        - id: integration-service
+          uri: lb://api-gateway
+          predicates:
+            - Path=/api/integration/**
           filters:
             - StripPrefix=0
 
@@ -38,3 +50,12 @@ eureka:
     fetch-registry: true
   instance:
     prefer-ip-address: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,gateway
+  endpoint:
+    health:
+      show-details: always

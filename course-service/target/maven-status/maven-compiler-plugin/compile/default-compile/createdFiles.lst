@@ -1,0 +1,12 @@
+com\example\course\dto\StudentDTO.class
+com\example\course\dto\CourseResponseDTO.class
+com\example\course\repository\CourseEnrollmentRepository.class
+com\example\course\controller\CourseController.class
+com\example\course\repository\CourseRepository.class
+com\example\course\CourseServiceApplication.class
+com\example\course\dto\CourseCreateDTO.class
+com\example\course\model\CourseEnrollment.class
+com\example\course\model\Course.class
+com\example\course\service\CourseService.class
+com\example\course\dto\CourseWithStudentsDTO.class
+com\example\course\client\StudentServiceClient.class

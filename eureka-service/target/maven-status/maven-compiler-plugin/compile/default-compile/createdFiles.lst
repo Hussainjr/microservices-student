@@ -1,0 +1,6 @@
+com\example\eureka\controller\ServiceRegistryController.class
+com\example\eureka\EurekaServiceApplication.class
+com\example\eureka\model\ServiceRegistry.class
+com\example\eureka\repository\ServiceRegistryRepository.class
+com\example\eureka\service\ServiceRegistryService.class
+com\example\eureka\controller\ServiceRegistryController$1.class
